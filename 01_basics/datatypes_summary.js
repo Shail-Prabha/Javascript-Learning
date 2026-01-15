@@ -33,4 +33,31 @@ const myFunction = function(){
     
 }
 
-console.log(typeof heros);
+// console.log(typeof heros);
+
+
+ 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+// Stack (Primitive)  -> We get copy of the variable , Heap (Non-primitive) -> We get actual value ,
+// because of the reference 
+
+let myMailName = "shailprabha@gmail.com"
+
+let anotherName = myMailName
+anotherName = "sh@gmail.com"
+
+// console.log(myMailName);
+// console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "shail@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
