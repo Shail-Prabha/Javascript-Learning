@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM LEARNING</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title","generate title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+    // div.innerText = "DOM Learning"
+    const addText = document.createTextNode("Learn code")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+
+    const div1 = document.createElement('div')
+    console.log(div1);
+    div1.className = "sunder"
+    div1.id = Math.round(Math.random() * 10 + 1)
+    div1.setAttribute("value","Very important")
+    div1.style.backgroundColor = "Yellow"
+    div1.style.padding = "10px"
+    const addText1 = document.createTextNode("Shail Prabha")
+    div1.appendChild(addText1)
+    div.appendChild(div1)
+
+    const para = document.createElement('p')
+    console.log(para);
+    para.style.color = "blue"
+    const addText2 = document.createTextNode("Learn with fun and get succes")
+    para.appendChild(addText2)
+    div1.appendChild(para)
+    
+</script>
+
+
+</html>
