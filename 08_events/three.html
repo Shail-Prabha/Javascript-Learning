@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Learning Code With Fun</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</head>
+<body>
+<script>
+    // setInterval(function(){
+    //     console.log("Shail",Date.now());  
+    // }, 1000)
+
+    const sayDate = function(str){
+        console.log(str,Date.now())
+    }
+
+    const intervalId = setInterval(sayDate, 1000, "Hi")
+    clearInterval(intervalId)
+</script>
+</body>
+</html>
